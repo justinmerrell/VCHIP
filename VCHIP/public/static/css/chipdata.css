@@ -1,0 +1,103 @@
+#ChipData{
+	color: white;
+	font: 6rem Inconsolata, monospace;
+	text-shadow: 0 0 5px #C8C8C8;
+	padding-left: 20px;
+
+	position: absolute;
+	top: 15%;
+	/* left: 5%; */
+	/* -webkit-transform: translate(-51%, -50%);
+	-moz-transform: translate(-51%, -50%);
+	-ms-transform: translate(-51%, -50%);
+	-o-transform: translate(-51%, -50%);
+	transform: translate(-51%, -50%); */
+
+	z-index: 9999;
+	/* color: white;	
+	text-align: center; */
+}
+
+#ChipData::after {
+	content: "";
+	position: absolute;	
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: repeating-linear-gradient(
+	  0deg,
+	  rgba(black, 0.15),
+	  rgba(black, 0.15) 1px,
+	  transparent 1px,
+	  transparent 2px
+	);
+  }
+
+#ChipMaker{
+	color: white;
+	font: 5rem Inconsolata, monospace;
+	text-shadow: 0 0 5px #C8C8C8;
+	/* padding-left: 20px; */
+	text-align: center;
+	width: 100vw;
+
+	position: absolute;
+	top: 60%;
+	/* left: 5%; */
+	/* -webkit-transform: translate(-51%, -50%);
+	-moz-transform: translate(-51%, -50%);
+	-ms-transform: translate(-51%, -50%);
+	-o-transform: translate(-51%, -50%);
+	transform: translate(-51%, -50%); */
+
+	z-index: 9999;
+	/* color: white;	
+	text-align: center; */
+}
+
+#ChipMaker::after {
+	content: "";
+	position: absolute;	
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: repeating-linear-gradient(
+	  0deg,
+	  rgba(black, 0.15),
+	  rgba(black, 0.15) 1px,
+	  transparent 1px,
+	  transparent 2px
+	);
+  }
+
+#NextButton{
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	-webkit-transform: translate(-51%, -50%);
+	-moz-transform: translate(-51%, -50%);
+	-ms-transform: translate(-51%, -50%);
+	-o-transform: translate(-51%, -50%);
+	transform: translate(-51%, -50%);
+
+	background-color: #1b5f70;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	/* display: inline-block; */
+	/* font-size: 16px; */
+	/* margin: 4px 2px; */
+	cursor: pointer;
+	border-radius: 5%;
+
+	/* height: 40vw; */
+	width: 90vw;
+	font-size: 7rem;
+	z-index: 9999;
+
+	padding: 30px;
+}

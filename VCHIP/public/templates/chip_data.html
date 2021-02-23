@@ -1,0 +1,66 @@
+<pre id="ChipData" style="display: none;">
+Name: {{ name }}
+{% if extra != None %} 
+{{ extra }}
+{% endif %}
+</pre>
+
+<pre id="ChipMaker" style="display: none;">
+<i>
+<b>Chip Manufacturer Info</b>
+Micro Gates Inc.
+# {% if chipid != None %}{{ chipid }}{%else%}{{ randid }}{% endif %}
+Firmware Version 3.1.4
+</i>
+</pre>
+
+
+<button id="NextButton" onclick="CallToAction()" style="display: none;">Now What?</button>
+
+{% include "create_share.html" %}
+
+<script>
+	function CallToAction(){
+		document.getElementById("ChipData").style.display = "none";
+		document.getElementById("NextButton").style.display = "none";
+		document.getElementById("ChipMaker").style.display = "none";
+
+		document.getElementById("NameField").style.display = "block";
+		document.getElementById("extra_details_box").style.display = "block";		
+		document.getElementById("GenerateLinkButton").style.display = "block";
+		document.getElementById("ChipStory").style.display = "block";
+
+
+		const inputbox = document.querySelector('input');
+
+		inputbox.addEventListener('blur', (event) => {
+			document.getElementById("ChipStory").style.display = "block";
+			document.getElementById("GenerateLinkButton").style.display = "block";
+			document.getElementById("extra_details_box").style.display = "block";
+		});
+
+		inputbox.addEventListener('focus', (event) => {
+			document.getElementById("ChipStory").style.display = "none";
+			document.getElementById("GenerateLinkButton").style.display = "none";
+			document.getElementById("extra_details_box").style.display = "none";
+		});
+
+
+		const textareabox = document.querySelector('textarea');
+
+		textareabox.addEventListener('blur', (event) => {
+			document.getElementById("ChipStory").style.display = "block";
+			document.getElementById("GenerateLinkButton").style.display = "block";
+			document.getElementById("NameField").style.display = "block";
+		});
+
+		textareabox.addEventListener('focus', (event) => {
+			document.getElementById("ChipStory").style.display = "none";
+			document.getElementById("GenerateLinkButton").style.display = "none";
+			document.getElementById("NameField").style.display = "none";
+		});
+		
+		// document.getElementById("ad").style.display = "block";
+
+	}
+</script>

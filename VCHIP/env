@@ -1,0 +1,14 @@
+DJANGO_SECRET_KEY=kdx_^a97rp-uqr30)74i#k%w+r-v-8o3)$2&+_f=51u43)7b)n
+DEBUG=True
+DJANGO_ALLOWED_HOSTS=vchip.app,68.183.19.183
+DATABASE_ENGINE=postgresql
+DATABASE_NAME=vchip
+DATABASE_USERNAME=vchip_dbuser
+DATABASE_PASSWORD=xkYjKNC4OPlxyidOONgP
+DATABASE_HOST=db-postgresql-nyc1-55669-vhchip-do-user-4374188-0.b.db.ondigitalocean.com
+DATABASE_PORT=25060
+STATIC_ACCESS_KEY_ID=27IMLTDJ4LO6NFW2S565
+STATIC_SECRET_KEY=tuv1iH/8oWck35gXWDMZj9WaRgrnmbf1k+3GwB1Y644
+STATIC_BUCKET_NAME=vchip-space
+STATIC_ENDPOINT_URL=https://vchip-space.sfo3.digitaloceanspaces.com/
+DJANGO_LOGLEVEL=info

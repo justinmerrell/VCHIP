@@ -1,0 +1,259 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>VCHIP: the Vaccine Chip Scanner</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600,800,900" rel="stylesheet" type="text/css">
+
+
+	<link rel="stylesheet" href="{% static 'css/scanner.css' %}">
+	<link rel="stylesheet" href="{% static 'css/scanner_action_text.css' %}">
+	<link rel="stylesheet" href="{% static 'css/progress.css' %}">
+	<link rel="stylesheet" href="{% static 'css/button.css' %}">
+	<link rel="stylesheet" href="{% static 'css/general.css' %}">
+	<link rel="stylesheet" href="{% static 'css/chipdata.css' %}">
+	<link rel="stylesheet" href="{% static 'css/create_share.css' %}">
+
+	<script src="{% static 'js/ajax_CSRF.js' %}"></script>  
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6N0W5WD0FL"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-6N0W5WD0FL');
+	</script>
+
+	<script data-ad-client="ca-pub-0528538247401436" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+</head>
+
+<body style="overflow:hidden";>
+
+	<div id="AppName">
+		<h1>the Vaccine Chip Scanner</h1>
+		<h1>the Vaccine Chip Scanner</h1>
+		<h1>the Vaccine Chip Scanner</h1>
+	  </div>
+
+<div style="font-size: 5em; color: white;" id="testout"></div>
+
+<button class="pulsingButton" id="startbutton" onclick="initiate()">FIND CHIP</button>
+
+{% include "scanner_action_text.html" %}
+{% include "scanner.html" %}
+{% include "progress.html" %}
+{% include "chip_data.html" %}
+
+<div id="FrontPageInstructions">
+	To use, place phone over vaccine injection site.
+</div>
+
+
+<script>
+	var isMobile = false; //initiate as false
+	// device detection
+	if(/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|ipad|iris|kindle|Android|Silk|lge |maemo|midp|mmp|netfront|opera m(ob|in)i|palm( os)?|phone|p(ixi|re)\/|plucker|pocket|psp|series(4|6)0|symbian|treo|up\.(browser|link)|vodafone|wap|windows (ce|phone)|xda|xiino/i.test(navigator.userAgent) 
+		|| /1207|6310|6590|3gso|4thp|50[1-6]i|770s|802s|a wa|abac|ac(er|oo|s\-)|ai(ko|rn)|al(av|ca|co)|amoi|an(ex|ny|yw)|aptu|ar(ch|go)|as(te|us)|attw|au(di|\-m|r |s )|avan|be(ck|ll|nq)|bi(lb|rd)|bl(ac|az)|br(e|v)w|bumb|bw\-(n|u)|c55\/|capi|ccwa|cdm\-|cell|chtm|cldc|cmd\-|co(mp|nd)|craw|da(it|ll|ng)|dbte|dc\-s|devi|dica|dmob|do(c|p)o|ds(12|\-d)|el(49|ai)|em(l2|ul)|er(ic|k0)|esl8|ez([4-7]0|os|wa|ze)|fetc|fly(\-|_)|g1 u|g560|gene|gf\-5|g\-mo|go(\.w|od)|gr(ad|un)|haie|hcit|hd\-(m|p|t)|hei\-|hi(pt|ta)|hp( i|ip)|hs\-c|ht(c(\-| |_|a|g|p|s|t)|tp)|hu(aw|tc)|i\-(20|go|ma)|i230|iac( |\-|\/)|ibro|idea|ig01|ikom|im1k|inno|ipaq|iris|ja(t|v)a|jbro|jemu|jigs|kddi|keji|kgt( |\/)|klon|kpt |kwc\-|kyo(c|k)|le(no|xi)|lg( g|\/(k|l|u)|50|54|\-[a-w])|libw|lynx|m1\-w|m3ga|m50\/|ma(te|ui|xo)|mc(01|21|ca)|m\-cr|me(rc|ri)|mi(o8|oa|ts)|mmef|mo(01|02|bi|de|do|t(\-| |o|v)|zz)|mt(50|p1|v )|mwbp|mywa|n10[0-2]|n20[2-3]|n30(0|2)|n50(0|2|5)|n7(0(0|1)|10)|ne((c|m)\-|on|tf|wf|wg|wt)|nok(6|i)|nzph|o2im|op(ti|wv)|oran|owg1|p800|pan(a|d|t)|pdxg|pg(13|\-([1-8]|c))|phil|pire|pl(ay|uc)|pn\-2|po(ck|rt|se)|prox|psio|pt\-g|qa\-a|qc(07|12|21|32|60|\-[2-7]|i\-)|qtek|r380|r600|raks|rim9|ro(ve|zo)|s55\/|sa(ge|ma|mm|ms|ny|va)|sc(01|h\-|oo|p\-)|sdk\/|se(c(\-|0|1)|47|mc|nd|ri)|sgh\-|shar|sie(\-|m)|sk\-0|sl(45|id)|sm(al|ar|b3|it|t5)|so(ft|ny)|sp(01|h\-|v\-|v )|sy(01|mb)|t2(18|50)|t6(00|10|18)|ta(gt|lk)|tcl\-|tdg\-|tel(i|m)|tim\-|t\-mo|to(pl|sh)|ts(70|m\-|m3|m5)|tx\-9|up(\.b|g1|si)|utst|v400|v750|veri|vi(rg|te)|vk(40|5[0-3]|\-v)|vm40|voda|vulc|vx(52|53|60|61|70|80|81|83|85|98)|w3c(\-| )|webc|whit|wi(g |nc|nw)|wmlb|wonu|x700|yas\-|your|zeto|zte\-/i.test(navigator.userAgent.substr(0,4))) { 
+		isMobile = true;
+	}
+
+	if (isMobile == false){
+		console.log("here");
+		// document.body.innerHTML = "Nope";
+		startbutton.style.display = "none";
+		document.getElementById("FrontPageInstructions").style.width = "50vw";
+		document.getElementById("FrontPageInstructions").style.left = "25vw";
+		document.getElementById("FrontPageInstructions").innerHTML = "Due to the required sensors this site can only be used on a mobile device."	
+	}
+</script>
+
+<script>
+	var startbutton = document.getElementById("startbutton");
+	var instructions = document.getElementById("FrontPageInstructions");
+
+	var ScanBar = document.getElementById("ScanBar");
+	var textannimation = document.getElementById("scanningTextAnnimation");
+	var ProgressIndicator = document.getElementById("ProgressIndicator");
+
+	function initiate(){	
+		FrontPageInstructions.style.display = "none";
+		startbutton.style.display = "none";
+		textannimation.style.display = "block"; 
+		ScanBar.style.display = "block";
+		timeline();
+	}
+</script>
+
+<script>		
+	var reading = false;
+	var accStart = 0;
+
+	function timeline(){
+		
+		setTimeout(() => { 
+			try{
+				window.navigator.vibrate([400, 200, 400]);
+			}
+			catch{};
+			
+			textannimation.style.display = "none"; 
+			ScanBar.style.display = "none";
+			ProgressIndicator.style.display = "block";
+			accStart = acl.z;			
+			reading = true;	
+			updateprogress(0);		
+			
+			// while (reading) {
+			// 	console.log("here")
+			// 	if (acl.z >= (accStart + 3)){
+			// 		document.getElementById("testout").innerHTML = "Moved";
+			// 	}
+
+			// 	setTimeout(() => { 
+			// 		reading = false;				
+			// 	}, 5000);
+			// }	
+
+		}, 5000);
+
+		// setTimeout(() => { 								
+		// 	CheckMotion();
+		// }, 5000);
+
+		// accStill = accReading;
+		
+
+		// while (reading) {
+		// 	if (reading == (accStill + 10)){
+		// 		document.getElementById("testout").innerHTML = "Moved";
+		// 	}
+		// }
+
+	}
+</script>
+
+
+
+
+
+
+<script>
+	function updateprogress(val){
+//   var val = 10;
+  var $circle = $('#svg #bar');
+  
+  if (isNaN(val)) {
+   val = 100; 
+  }
+  else{
+    var r = $circle.attr('r');
+    var c = Math.PI*(r*2);
+   
+    if (val < 0) { val = 0;}
+    if (val > 100) { val = 100;}
+    
+    var pct = ((100-val)/100)*c;
+    
+    $circle.css({ strokeDashoffset: pct});
+    
+    $('#cont').attr('data-pct',val);
+  }
+  
+	if (acl.z >= (accStart + 3)){
+		// document.getElementById("testout").innerHTML = "Moved";		
+		alert("Connection to chip lost, please DO NOT MOVE and try again.")
+		location.reload();
+	}
+	else{
+		if (val < 100){
+			setTimeout(() => { updateprogress(val+2) }, 130);
+		}
+		else if (val >= 100){
+			ProgressIndicator.style.display = "none";
+			try{
+				window.navigator.vibrate(400);
+			}
+			catch{}
+			document.getElementById("ChipData").style.display = "block";
+			document.getElementById("ChipMaker").style.display = "block";			
+			document.getElementById("NextButton").style.display = "block";
+		}
+	}
+
+	
+	
+};
+</script>
+
+<script>	
+
+// 	if (window.DeviceOrientationEvent) {
+//     window.addEventListener("deviceorientation", function(event) {
+//         // alpha: rotation around z-axis
+//         var rotateDegrees = event.alpha;
+//         // gamma: left to right
+//         var leftToRight = event.gamma;
+//         // beta: front back motion
+//         var frontToBack = event.beta;
+
+//         handleOrientationEvent(frontToBack, leftToRight, rotateDegrees);
+//     }, true);
+// }
+
+// var handleOrientationEvent = function(frontToBack, leftToRight, rotateDegrees) {
+//     // do something amazing
+// 	// document.getElementById("testout").innerHTML = frontToBack;
+	
+// };
+
+let acl = new Accelerometer({frequency: 60});
+
+// acl.addEventListener('reading', () => {
+//   console.log("Acceleration along the X-axis " + acl.x);
+//   console.log("Acceleration along the Y-axis " + acl.y);
+//   console.log("Acceleration along the Z-axis " + acl.z);
+
+//   document.getElementById("testout").innerHTML = acl.z;
+// });
+
+acl.start();
+
+
+
+
+
+
+
+
+	
+		
+	// window.addEventListener("deviceorientation", handleOrientation, true);
+
+	// document.getElementById("testout").innerHTML = "ready";
+
+	// function handleOrientation(event) {
+	// var absolute = event.absolute;
+	// var alpha    = event.alpha;
+	// var beta     = event.beta;
+	// var gamma    = event.gamma;
+	// document.getElementById("testout").innerHTML = alpha;
+	// }
+
+	// window.addEventListener('devicemotion', function(event) {
+	// console.log(event.acceleration.x + ' m/s2');
+	// alert(event.acceleration.x);
+	// });
+</script>
+
+</body>
+
+</html>
