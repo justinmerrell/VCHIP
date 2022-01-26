@@ -1,0 +1,16 @@
+# Virtualenv
+env/*
+
+# python
+*/__pycache__/*
+__pycache__/
+*get-pip.py
+
+# Django
+db.sqlite3
+
+# Logs
+*/logs/*
+!.gitkeep
+bash_errors.log
+brick_connect_errors.log

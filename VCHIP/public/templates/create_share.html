@@ -1,29 +1,119 @@
-<!-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> -->
-<!-- vchip banner -->
-<!-- <ins class="adsbygoogle"
-     style="display:block"
-     data-ad-client="ca-pub-0528538247401436"
-     data-ad-slot="5013135830"
-     data-ad-format="auto"
-     data-full-width-responsive="true"></ins> -->
+<div id="ad" style="display: none; position: absolute; bottom: 0px; width: 100%;">
+    <div style="margin: auto; width: fit-content;">
+        <!-- <script type="text/javascript">
+            atOptions = {
+                'key': '3e866a9f6c02e482544bf285c54c6a20',
+                'format': 'iframe',
+                'height': 50,
+                'width': 320,
+                'params': {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectivedisplayformat.com/3e866a9f6c02e482544bf285c54c6a20/invoke.js"></scr' + 'ipt>');
+            $(document).ready(function () {
+                $("iframe").each(
+                    function (index, elem) {
+                        console.log("here");
+                        elem.setAttribute("sandbox", "");
+                    }
+                );
+            });
+        </script> -->
+
+    </div>
+</div>
+
 <!-- <script>
-     (adsbygoogle = window.adsbygoogle || []).push({});
-</script>	 -->
+    $(document).ready(function () {
+        $("iframe").each(
+            function (index, elem) {
+                console.log("here");
+                elem.setAttribute("sandbox", "");
+            }
+        );
+    });
 
-<p id="ChipStory" style="display: none;">
-	You are good to go for the new world order. <br><br>
-	Chip firmware updates will be pushed once 5G is available in your area; during an update you may experience a slight sensation.
-</p>
 
+    document.ready = SandboxFrames();
+
+    function SandboxFrames() {
+        $("iframe").each(
+            function (index, elem) {
+                console.log("here");
+                elem.setAttribute("sandbox", "");
+            }
+        );
+
+        var frames = document.getElementsByTagName('iframe');
+        console.log(frames);
+
+        //Array.from(frames).forEach((element) => { element.setAttribute("onclick", "here"); })
+
+        Array.from(frames).forEach((frame) => {
+            console.log(frame)
+        })
+
+        for (let frame of frames) {
+            console.log("here");
+            console.log(frame);
+            //frames[i].setAttribute("sandbox", true);
+        }
+
+    }
+</script> -->
+
+
+<div id="ChipStory" style="display: none;">
+    <p>
+        You are good to go for the new world order. <br><br>
+        Chip firmware updates will be pushed once 5G is available in your area; during an update you may experience a slight sensation.
+    </p>
+    <br>
+    <div id="large_ad" style="display: none; width: 90%; margin: auto;">
+        <!-- <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="merrell" data-color="#40DCA5" data-emoji="🍺" data-font="Bree" data-text="Buy me a beer" data-outline-color="#000000" data-font-color="#ffffff" data-coffee-color="#FFDD00"></script> -->
+        <!-- <script async src="https://ndroip.com/na/waWQiOjEwOTc0NDksInNpZCI6MTEwNjcxMiwid2lkIjoyMzI4MjgsInNyYyI6Mn0=eyJ.js"></script> -->
+        <!-- <script type="text/javascript">
+            atOptions = {
+                'key': '79a1bf43181919236ceab91c56eeb826',
+                'format': 'iframe',
+                'height': 250,
+                'width': 300,
+                'params': {}
+            };
+            document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's' : '') + '://www.effectivedisplayformat.com/79a1bf43181919236ceab91c56eeb826/invoke.js"></scr' + 'ipt>');
+        </script> -->
+        <script type="text/javascript">
+            window._mNHandle = window._mNHandle || {};
+            window._mNHandle.queue = window._mNHandle.queue || [];
+            medianet_versionId = "3121199";
+        </script>
+        <script src="https://contextual.media.net/dmedianet.js?cid=8CU28B23T" async="async"></script>
+        <div id="128255127">
+            <script type="text/javascript">
+                try {
+                    window._mNHandle.queue.push(function () {
+                        window._mNDetails.loadTag("128255127", "300x250", "128255127");
+                    });
+                }
+                catch (error) { }
+            </script>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- --------------------- START - Customization Links --------------------- -->
 <div class="form__group field" id="NameField" style="display: none;">
-	<input type="input" class="form__field" placeholder="Name" name="name" id='name' autocomplete="off" required />
-	<label for="name" class="form__label">Friends Name (or enemy, no judgement)</label>
+    <input type="input" class="form__field" placeholder="Name" name="name" id='name' autocomplete="off" required />
+    <label for="name" class="form__label">Friends Name (or enemy, no judgement)</label>
 </div>
 
 <div class="form__group field" id="extra_details_box" style="display: none;">
-	<textarea rows="4" class="form__field" placeholder="Name" name="extra_details" id='extra_details' autocomplete="off"></textarea>
-	<label for="extra_details" class="form__label">Additional "Chip Data"</label>
+    <textarea rows="4" class="form__field" placeholder="Name" name="extra_details" id='extra_details' autocomplete="off"></textarea>
+    <label for="extra_details" class="form__label">Additional "Chip Data"</label>
 </div>
+<!-- ---------------------- END - Customization Links ---------------------- -->
+
 
 <button id="GenerateLinkButton" onclick="GenerateLink()" style="display: none;">Create Scanner Link</button>
 <button id="CustomLink" onclick="CopyToClip()" style="display: none;"></button>
@@ -31,43 +121,66 @@
 <input type="input" id="forcopy" style="display: none;">
 <!-- <input type="input" id="forcopy" style="display: none;"> -->
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<button id='answer-example-share-button' class="DirectShare" style="display: none;">or Quick Share</button>
+
 <script>
-	function GenerateLink(){
-		var formData = new FormData();
-		var xhttp = new XMLHttpRequest();
-		var url = '/link/';
-		formData.append('target_name', document.getElementById("name").value);
-		formData.append('extra_details', document.getElementById("extra_details").value);
-		
-		xhttp.onload = function(){
-			document.getElementById("NameField").style.display = "none";
-			document.getElementById("extra_details_box").style.display = "none";
-			document.getElementById("GenerateLinkButton").style.display = "none";
-			
-			document.getElementById("forcopy").value= this.responseText;
-			document.getElementById("CustomLink").innerHTML = this.responseText;
-			document.getElementById("CustomLink").style.display = "block";			
-		}
+    $('#answer-example-share-button').on('click', () => {
+        if (navigator.share) {
+            navigator.share({
+                title: 'vchip.app',
+                text: 'the Vaccine Chip Scanner',
+                url: 'https://vchip.app/',
+            })
+                .then(() => console.log('Successful share'))
+                .catch((error) => console.log('Error sharing', error));
+        } else {
+            console.log('Share not supported on this browser, do it the old way.');
+        }
+    });
+</script>
 
-		xhttp.open('POST', url, true);
-		xhttp.setRequestHeader("X-CSRFToken", csrftoken);
-		xhttp.send(formData);
-	}
 
-	function CopyToClip(){
-		document.getElementById("forcopy").style.display = "block";	
+<script>
+    function GenerateLink() {
+        var formData = new FormData();
+        var xhttp = new XMLHttpRequest();
+        var url = '/link/';
+        formData.append('target_name', document.getElementById("name").value);
+        formData.append('extra_details', document.getElementById("extra_details").value);
 
-		var copyText = document.getElementById("forcopy");
-		copyText.select();
-		copyText.setSelectionRange(0, 99999);
-		document.execCommand("copy");
-		document.getElementById("CustomLink").innerHTML = "Copied!";
-		console.log("Copied the text: " + copyText.value);
-		// alert("Copied the text: " + copyText.value);	
-		
-		document.getElementById("forcopy").style.display = "none";	
-	}
-</script>	
+        xhttp.onload = function () {
+            document.getElementById("NameField").style.display = "none";
+            document.getElementById("extra_details_box").style.display = "none";
+            document.getElementById("GenerateLinkButton").style.display = "none";
+            document.getElementById("answer-example-share-button").style.display = "none";
+
+            document.getElementById("forcopy").value = this.responseText;
+            document.getElementById("CustomLink").innerHTML = this.responseText;
+            document.getElementById("CustomLink").style.display = "block";
+
+            document.getElementById("large_ad").style.display = "block";
+        }
+
+        xhttp.open('POST', url, true);
+        xhttp.setRequestHeader("X-CSRFToken", csrftoken);
+        xhttp.send(formData);
+    }
+
+    function CopyToClip() {
+        document.getElementById("forcopy").style.display = "block";
+
+        var copyText = document.getElementById("forcopy");
+        copyText.select();
+        copyText.setSelectionRange(0, 99999);
+        document.execCommand("copy");
+        document.getElementById("CustomLink").innerHTML = "Copied!";
+        console.log("Copied the text: " + copyText.value);
+        // alert("Copied the text: " + copyText.value);
+
+        document.getElementById("forcopy").style.display = "none";
+    }
+</script>
 
 <script>
 	// const inputbox = document.querySelector('input, textarea');

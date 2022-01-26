@@ -1,5 +1,5 @@
-#extra_details_box {	
-	bottom: 15%;	
+#extra_details_box {
+	bottom: 25%;
 }
 
 .form__group {
@@ -7,7 +7,7 @@
 	padding: 15px 0 0;
 	margin-top: 10px;
 	width: 95%;
-	bottom: 35%;
+	bottom: 45%;
 	margin-left: 20px;
 	margin-right: 20px;
 	z-index: 9999;
@@ -74,6 +74,36 @@
 
 
 #GenerateLinkButton{
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	-webkit-transform: translate(-51%, -50%);
+	-moz-transform: translate(-51%, -50%);
+	-ms-transform: translate(-51%, -50%);
+	-o-transform: translate(-51%, -50%);
+	transform: translate(-51%, -50%);
+
+	background-color: #1b5f70;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+	/* display: inline-block; */
+	/* font-size: 16px; */
+	/* margin: 4px 2px; */
+	cursor: pointer;
+	border-radius: 5%;
+
+	/* height: 40vw; */
+	width: 90vw;
+	font-size: 7rem;
+	z-index: 9999;
+
+	padding: 30px;
+}
+
+.DirectShare{
 	position: absolute;
 	bottom: 0;
 	left: 50%;
@@ -142,7 +172,7 @@
 	padding-right: 30px;
 
 	position: absolute;
-	top: 15%;
+	top: 5%;
 	/* left: 5%; */
 	/* -webkit-transform: translate(-51%, -50%);
 	-moz-transform: translate(-51%, -50%);
@@ -151,13 +181,13 @@
 	transform: translate(-51%, -50%); */
 
 	z-index: 9999;
-	/* color: white;	
+	/* color: white;
 	text-align: center; */
 }
 
 #ChipStory::after {
 	content: "";
-	position: absolute;	
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100vw;

@@ -7,16 +7,21 @@ from .models import CustomText
 import random
 
 def scanner(request):
-	return render(request, 'compiled_annimation.html')
+    '''
+    URL: /
+    Method: GET
+    This is the landing page of the app that sets up the environment.
+    '''
+    return render(request, 'landing_page.html', {'randid':random.randint(1000000000,9999999999)})
 
 def code(request, code):
 	print(code)
 	try:
 		customFields = CustomText.objects.get(tag=code)
-		return render(request, 'compiled_annimation.html', {'name': customFields.target_name, 'extra':customFields.target_extra, 'randid':random.randint(1000000000,9999999999)})
+		return render(request, 'landing_page.html', {'name': customFields.target_name, 'extra':customFields.target_extra, 'randid':random.randint(1000000000,9999999999)})
 
 	except Exception as e:
-		return render(request, 'compiled_annimation.html', {'randid':random.randint(1000000000,9999999999)})
+		return render(request, 'landing_page.html', {'randid':random.randint(1000000000,9999999999)})
 
 @csrf_exempt
 def GenerateLink(request):

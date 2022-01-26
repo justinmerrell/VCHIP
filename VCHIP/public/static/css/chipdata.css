@@ -2,7 +2,10 @@
 	color: white;
 	font: 6rem Inconsolata, monospace;
 	text-shadow: 0 0 5px #C8C8C8;
-	padding-left: 20px;
+	/* padding-left: 10px; */
+    /* padding-right: 10px; */
+    margin: auto;
+    width: 100%;
 
 	position: absolute;
 	top: 15%;
@@ -14,13 +17,13 @@
 	transform: translate(-51%, -50%); */
 
 	z-index: 9999;
-	/* color: white;	
+	/* color: white;
 	text-align: center; */
 }
 
 #ChipData::after {
 	content: "";
-	position: absolute;	
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100vw;
@@ -52,13 +55,13 @@
 	transform: translate(-51%, -50%); */
 
 	z-index: 9999;
-	/* color: white;	
+	/* color: white;
 	text-align: center; */
 }
 
 #ChipMaker::after {
 	content: "";
-	position: absolute;	
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100vw;
