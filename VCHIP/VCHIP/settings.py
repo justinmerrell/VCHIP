@@ -50,6 +50,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 	'storages',						#Used to offload static files to Digital Ocean Space
 	'public',						#Created to store any public facing pages.
+
+    # External Utilities
+    'django-DevOps'                 # https://github.com/justinmerrell/django-DevOps
 ]
 
 MIDDLEWARE = [

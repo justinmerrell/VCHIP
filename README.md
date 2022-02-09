@@ -10,3 +10,13 @@ A prank website intended to "scan" the chip that has been embeded when someone r
 2) A screen indicating the chip has been found and if the users moves the chip is lost.
 
 <img src="docs/images/mobile.PNG?raw=true" width="200"> <img src="docs/images/find_chip.jpg?raw=true" width="200"> <img src="docs/images/scanning.jpg?raw=true" width="200"> <img src="docs/images/found.jpg?raw=true" width="200"> <img src="docs/images/chip.jpg?raw=true" width="200"> <img src="docs/images/results.jpg?raw=true" width="200">
+
+## Getting Started
+
+``` BASH
+sudo apt-get install python3-pip
+sudo git clone git@github.com:justinmerrell/VCHIP.git
+cd VCHIP
+sudo source env/bin/activate
+sudo pip install -r requirements.txt
+```
