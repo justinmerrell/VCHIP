@@ -1,0 +1,17 @@
+
+[Unit]
+Description=gunicorn daemon for VCHIP
+After=network.target
+
+[Service]
+User = root
+Group = www-data
+WorkingDirectory = /opt/VCHIP/VCHIP
+ExecStart = /opt/VCHIP/env/bin/gunicorn VCHIP.asgi:application  --access-logfile - -k uvicorn.workers.UvicornWorker --bind unix:/root/VCHIP/VCHIP/VCHIP/vchip.sock
+
+ExecReload = /opt/VCHIP/env/bin/gunicorn VCHIP.asgi:application  --access-logfile - -k uvicorn.workers.UvicornWorker --bind unix:/root/VCHIP/VCHIP/VCHIP/vchip.sock
+
+Restart = always
+
+[Install]
+WantedBy = multi-user.target
