@@ -1,4 +1,4 @@
-# VCHIP.APP
+# VCHIP
 
 A prank website intended to "scan" the chip that has been embeded when someone recives the vaccine. The web app makes use of a phones embeded hardware to communicate a false perception that a scan is indeed happening, because of this it is intended to only work on mobile devices.
 
