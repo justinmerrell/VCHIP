@@ -14,9 +14,18 @@ A prank website intended to "scan" the chip that has been embeded when someone r
 ## Getting Started
 
 ``` BASH
-sudo apt-get install python3-pip
+sudo apt update && sudo apt upgrade -y
+sudo apt install software-properties-common -y
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt install python3.10 -y
+sudo apt install nginx -y
+
 sudo git clone git@github.com:justinmerrell/VCHIP.git
 cd VCHIP
-sudo source env/bin/activate
-sudo pip install -r requirements.txt
+
+sudo apt-get install python3.10-venv -y
+python3.10 -m venv env
+
+source bbenv/bin/activate
+python -m pip install -r requirements.txt
 ```
