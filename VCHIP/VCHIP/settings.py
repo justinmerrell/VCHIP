@@ -52,7 +52,7 @@ INSTALLED_APPS = [
 	'public',						#Created to store any public facing pages.
 
     # External Utilities
-    'django-DevOps'                 # https://github.com/justinmerrell/django-DevOps
+    'django_devops'                 # https://github.com/justinmerrell/django-DevOps
 ]
 
 MIDDLEWARE = [
